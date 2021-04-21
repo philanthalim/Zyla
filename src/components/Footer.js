@@ -3,6 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div
+      className="footer-container"
       style={{
         minHeight: "100px",
         backgroundColor: "#FDF3F2",

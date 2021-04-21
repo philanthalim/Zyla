@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -10,10 +10,9 @@ const NavBar = () => {
             fontSize: "1.6rem",
             color: "#E892AD",
             fontWeight: "bold",
-            
           }}
         >
-          NoFilter
+          No<span style={{ color: "black" }}>Filter</span>
         </p>
       </Link>
     </div>

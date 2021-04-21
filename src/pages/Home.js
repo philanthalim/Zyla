@@ -5,7 +5,7 @@ import HomeThree from "../components/HomeThree";
 import HomeTwo from "../components/HomeTwo";
 import HomeOne from "../components/HomeOne";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -30,7 +30,12 @@ const Home = () => {
               placeholder={"Search for BlogShops"}
             ></input>
           </form>
-          <p className="home-header2">Write a review</p>
+          <Link
+            to={"/write-review"}
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <p className="home-header2">Write a review</p>
+          </Link>
         </div>
       </div>
       <HomeOne />

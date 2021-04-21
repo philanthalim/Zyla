@@ -37,7 +37,7 @@
   border-color: white;
 }
 .section-one {
-  margin-top: 10vh;
+  margin-top: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -80,6 +80,7 @@
   margin-top: 10vh;
   background-color: null;
   margin-bottom: 10vh;
+  flex-wrap: wrap;
 }
 li {
   list-style-type: none;
