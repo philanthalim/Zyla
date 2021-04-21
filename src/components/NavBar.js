@@ -10,6 +10,7 @@ const NavBar = () => {
             fontSize: "1.6rem",
             color: "#E892AD",
             fontWeight: "bold",
+            marginLeft: "20px",
           }}
         >
           No<span style={{ color: "black" }}>Filter</span>
