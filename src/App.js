@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Submitted from "./pages/Submitted";
 import SearchResults from "./pages/SearchResults";
 import WriteReview from "./pages/WriteReview";
+import ViewShop from "./pages/ViewShop";
 import "./styles/Home.css";
 import "./styles/NavBar.css";
 import "./styles/Footer.css";
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route exact path="/rate">
           <WriteReview />
+        </Route>
+        <Route exact path="/view-shop">
+          <ViewShop />
         </Route>
       </Switch>
     </Router>
