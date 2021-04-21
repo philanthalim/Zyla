@@ -32,10 +32,10 @@ const HomeThree = () => {
         </ul>
         <ul style={{ width: "100px" }}>
           <li>MDS</li>
-          <li>Anticlockwise</li>
+          <li>Anna</li>
           <li>Zara</li>
           <li>Fayth</li>
-          <li>LoveandBravery</li>
+          <li>Cheris</li>
           <li>Stagewalk</li>
         </ul>
       </div>
