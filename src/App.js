@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/search">
           <SearchResults />
         </Route>
-        <Route exact path="/write-review">
+        <Route exact path="/rate">
           <WriteReview />
         </Route>
       </Switch>
