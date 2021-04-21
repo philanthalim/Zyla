@@ -54,7 +54,7 @@ const WriteReview = () => {
         </select>
         <p>Item name</p>
         <input></input>
-        <p style={{ marginRight: "20px" }}>Rate in terms of fit</p>
+        <p style={{ marginRight: "20px" }}>Rate the fit out of 5</p>
         <select style={{ width: "300px" }}>
           <option>1</option>
           <option>2</option>
@@ -62,7 +62,7 @@ const WriteReview = () => {
           <option>4</option>
           <option>5</option>
         </select>
-        <p style={{ marginRight: "20px" }}>Rate in terms of comfort</p>
+        <p style={{ marginRight: "20px" }}>Rate the comfort out of 5</p>
         <select style={{ width: "300px" }}>
           <option>1</option>
           <option>2</option>
@@ -70,7 +70,7 @@ const WriteReview = () => {
           <option>4</option>
           <option>5</option>
         </select>
-        <p style={{ marginRight: "20px" }}>Rate in terms of quality</p>
+        <p style={{ marginRight: "20px" }}>Rate the quality out of 5</p>
         <select style={{ width: "300px" }}>
           <option>1</option>
           <option>2</option>
@@ -79,8 +79,8 @@ const WriteReview = () => {
           <option>5</option>
         </select>
         <p>Write a Comment</p>
-        <textarea placeholder="Write about your experience!"></textarea>
-        <button>Submit</button>
+        <textarea className='text-area' placeholder="Write about your experience!"></textarea>
+        <button className='submit-btn'>Submit</button>
       </div>
       <Footer />
     </div>
