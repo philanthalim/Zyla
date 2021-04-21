@@ -87,6 +87,9 @@ li {
   line-height: 60px;
 }
 @media (max-width: 50em) {
+  .home-img-container {
+    height: 50vh;
+  }
   .bottom {
     flex-direction: column;
   }
