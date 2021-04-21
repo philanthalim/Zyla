@@ -31,7 +31,7 @@ const Home = () => {
             ></input>
           </form>
           <Link
-            to={"/write-review"}
+            to={"/rate"}
             style={{ textDecoration: "none", color: "black" }}
           >
             <p className="home-header2">Write a review</p>
