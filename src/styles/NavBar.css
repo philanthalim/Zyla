@@ -1,7 +1,8 @@
 .nav-bar-container {
   top: 0;
-  background-color: null;
-  height: 60px;
+  background-color: #FDF3F2;
+  height: 75px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }

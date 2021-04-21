@@ -6,9 +6,7 @@ import fashmob from "../images/fashmob.png";
 const HomeTwo = () => {
   return (
     <div className="section-two">
-      <div className="top">
-        <h3 style={{ fontSize: "2rem" }}>Most Reviewed Blogshops</h3>
-      </div>
+      <h3 style={{ fontSize: "2rem" }}>Most Reviewed Blogshops</h3>
       <div className="bottom">
         <div className="bottom-div">
           <img className="s2-image" src={LB} alt="BlogShopImg"></img>

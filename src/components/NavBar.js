@@ -7,11 +7,10 @@ const NavBar = () => {
       <Link to={"/"} style={{ textDecoration: "none" }}>
         <p
           style={{
-            marginLeft: "3rem",
             fontSize: "1.6rem",
             color: "#E892AD",
             fontWeight: "bold",
-            fontFamily: "Vidaloka",
+            
           }}
         >
           NoFilter

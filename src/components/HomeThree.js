@@ -9,7 +9,6 @@ const HomeThree = () => {
       <div
         style={{
           flexDirection: "row",
-          justifyContent: "center",
           backgroundColor: "null",
           justifyContent: "space-evenly",
           display: "flex",

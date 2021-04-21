@@ -37,7 +37,7 @@
   border-color: white;
 }
 .section-one {
-  margin-top: 100px;
+  margin-top: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -50,10 +50,11 @@
   max-width: 600px;
 }
 .section-two {
-  margin-top: 100px;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: rgba(236, 167, 189, 0.2);
 }
 .bottom {
@@ -76,8 +77,9 @@
   border-radius: 220px;
 }
 .section-three {
-  margin-top: 100px;
+  margin-top: 10vh;
   background-color: null;
+  margin-bottom: 10vh;
 }
 li {
   list-style-type: none;
@@ -111,6 +113,9 @@ li {
     justify-content: center;
     align-items: center;
     padding: 20px;
+  }
+  li {
+    font-size: 0.9rem;
   }
 }
 
