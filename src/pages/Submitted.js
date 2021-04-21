@@ -7,7 +7,6 @@ const Submitted = () => {
     <div>
       <div
         style={{
-          backgroundColor: "rgba(236,167,189,0.8)",
           height: "55vh",
           display: "flex",
           justifyContent: "center",
@@ -23,7 +22,7 @@ const Submitted = () => {
             objectFit: "cover",
             width: "100%",
             height: "100%",
-           filter:'brightness(60%)',
+            filter: "brightness(60%)",
           }}
           src={lovet}
         ></img>

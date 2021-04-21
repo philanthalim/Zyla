@@ -1,0 +1,73 @@
+.review-one-div {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
+}
+.review-one-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(60%);
+}
+.review-two-div {
+  padding: 0 70px 70px 70px;
+  background-color: null;
+  font-size: 1.4rem;
+}
+.text-area {
+  width: 600px;
+  height: 40vh;
+  font-size: 1.5rem;
+}
+.submit-btn {
+  margin-top: 20px;
+  width: 80px;
+  height: 40px;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #e892ad;
+  color: #e892ad;
+}
+.submit-btn :hover {
+  background-color: #e892ad;
+  border: none;
+  border: 1px solid #e892ad;
+  color: white;
+}
+.shop-cat-select {
+  width: 300px;
+  font-size: 1.1rem;
+}
+.rate-div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.rate-select {
+  width: 35px;
+  font-size: 1.1rem;
+}
+.review-input {
+  width: 300px;
+  height: 5vh;
+  margin-left: 20px;
+  font-size: 1rem;
+  outline: 0;
+  border-width: 0 0 2px;
+}
+select {
+  border: 0px;
+  outline: 0px;
+  border-width: 0 0 2px;
+}
+@media (max-width: 45em) {
+  .text-area {
+    width: 400px;
+  }
+}

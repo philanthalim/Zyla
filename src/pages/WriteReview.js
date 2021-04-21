@@ -1,86 +1,36 @@
 import React from "react";
 import Footer from "../components/Footer";
 import lovet from "../images/lovetPink2.jpeg";
+import ShopDropDown from "../components/ShopDropDown";
+import CategoryDropDown from "../components/CategoryDropDown";
+import RatingDropDown from "../components/RatingDropDown";
+import CommentReview from "../components/CommentReview";
 
 const WriteReview = () => {
   return (
     <div>
-      <div
-        style={{
-          backgroundColor: "rgba(236,167,189,0.8)",
-          height: "55vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "2rem",
-          position: "relative",
-        }}
-      >
-        <img
-          style={{
-            objectFit: "cover",
-            height: "100%",
-            width: "100%",
-            filter: "brightness(60%)",
-          }}
-          src={lovet}
-          alt="lovet"
-        ></img>
+      <div className="review-one-div">
+        <img className="review-one-image" src={lovet} alt="lovet"></img>
         <h3 style={{ position: "absolute", color: "white" }}>Write a Review</h3>
       </div>
-      <div style={{ padding: "50px" }}>
-        <p style={{ marginRight: "20px" }}>Select Blogshop</p>
-        <select style={{ width: "300px" }}>
-          <option>Love Bonito</option>
-          <option>Lovet</option>
-          <option>Shopsassydream</option>
-          <option>Ohvola</option>
-          <option>Supergurl</option>
-          <option>Younghungryfree</option>
-          <option>Carrislabelle</option>
-          <option>MGP</option>
-          <option>Runwaybandits</option>
-          <option>Neonmello</option>
-          <option>Mikalya</option>
-          <option>Cheris</option>
-          <option>MDS</option>
-        </select>
-        <p style={{ marginRight: "20px" }}>Category</p>
-        <select style={{ width: "300px" }}>
-          <option>Tops</option>
-          <option>Bottoms</option>
-          <option>Accessories</option>
-          <option>Footwear</option>
-        </select>
-        <p>Item name</p>
-        <input></input>
-        <p style={{ marginRight: "20px" }}>Rate the fit out of 5</p>
-        <select style={{ width: "300px" }}>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <p style={{ marginRight: "20px" }}>Rate the comfort out of 5</p>
-        <select style={{ width: "300px" }}>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <p style={{ marginRight: "20px" }}>Rate the quality out of 5</p>
-        <select style={{ width: "300px" }}>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <p>Write a Comment</p>
-        <textarea className='text-area' placeholder="Write about your experience!"></textarea>
-        <button className='submit-btn'>Submit</button>
+      <div className="review-two-div">
+        <h1>
+          Write a <span style={{ color: "#e892ad" }}>Review</span>
+        </h1>
+        <ShopDropDown />
+        <CategoryDropDown />
+        <div
+          style={{
+            display: "flex",
+            marginBottom: "20px",
+            alignItems: "center",
+          }}
+        >
+          <p>Item Name</p>
+          <input className="review-input"></input>
+        </div>
+        <RatingDropDown />
+        <CommentReview />
       </div>
       <Footer />
     </div>

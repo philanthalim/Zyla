@@ -8,7 +8,6 @@ const SearchResults = () => {
     <div>
       <div
         style={{
-          backgroundColor: "rgba(236,167,189,0.8)",
           height: "55vh",
           display: "flex",
           justifyContent: "center",
@@ -30,8 +29,9 @@ const SearchResults = () => {
 
         <h3 style={{ position: "absolute", color: "white" }}>Search Results</h3>
       </div>
-      <Link to={'/view-shop'}>
-      <p>Click Here</p></Link>
+      <Link to={"/view-shop"}>
+        <p>Click Here</p>
+      </Link>
       <div style={{ height: "40vh" }}></div>
 
       <Footer />

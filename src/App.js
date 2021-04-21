@@ -9,6 +9,7 @@ import ViewShop from "./pages/ViewShop";
 import "./styles/Home.css";
 import "./styles/NavBar.css";
 import "./styles/Footer.css";
+import "./styles/Review.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {

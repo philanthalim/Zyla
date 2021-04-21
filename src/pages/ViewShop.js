@@ -1,11 +1,10 @@
 import React from "react";
-import lovet from "../images/lovetHeart.jpeg";
+import lovet from "../images/lovetPink2.jpeg";
 const ViewShop = () => {
   return (
     <div>
       <div
         style={{
-          backgroundColor: "rgba(236,167,189,0.8)",
           height: "55vh",
           display: "flex",
           justifyContent: "center",
