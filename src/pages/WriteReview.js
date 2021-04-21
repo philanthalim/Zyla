@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const WriteReview = () => {
   return (
@@ -70,6 +71,7 @@ const WriteReview = () => {
         <textarea placeholder="Write about your experience!"></textarea>
         <button>Submit</button>
       </div>
+      <Footer />
     </div>
   );
 };
