@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import lovet from "../images/lovetPink2.jpeg";
 
 const WriteReview = () => {
   return (
@@ -7,15 +8,25 @@ const WriteReview = () => {
       <div
         style={{
           backgroundColor: "rgba(236,167,189,0.8)",
-          height: "40vh",
+          height: "55vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           fontSize: "2rem",
-          color: "rgba(0, 0, 0, 0.8)",
+          position: "relative",
         }}
       >
-        <h3>Write a review</h3>
+        <img
+          style={{
+            objectFit: "cover",
+            height: "100%",
+            width: "100%",
+            filter: "brightness(60%)",
+          }}
+          src={lovet}
+          alt="lovet"
+        ></img>
+        <h3 style={{ position: "absolute", color: "white" }}>Write a Review</h3>
       </div>
       <div style={{ padding: "50px" }}>
         <p style={{ marginRight: "20px" }}>Select Blogshop</p>
