@@ -1,0 +1,132 @@
+.home-img-container {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.home-layover {
+  position: absolute;
+  background-color: null;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+.home-header1 {
+  font-size: 1.6rem;
+  animation: Slide_Up 0.4s ease;
+}
+.home-header2 {
+  font-size: 1.2rem;
+  animation: Slide_Up 0.7s ease;
+}
+.search-box {
+  height: 5vh;
+  width: 700px;
+  outline: none;
+  font-size: 1.1rem;
+  border-color: white;
+}
+.section-one {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.left {
+  width: "50%";
+  background-color: "pink";
+}
+.right-image {
+  max-width: 600px;
+}
+.section-two {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(236, 167, 189, 0.2);
+}
+.bottom {
+  width: 100%;
+  background-color: null;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bottom-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1px;
+}
+.s2-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 220px;
+}
+.section-three {
+  margin-top: 100px;
+  background-color: null;
+}
+li {
+  list-style-type: none;
+  line-height: 60px;
+}
+@media (max-width: 50em) {
+  .bottom {
+    flex-direction: column;
+  }
+  .bottom-div {
+    margin-top: 60px;
+  }
+
+  .search-box {
+    width: 400px;
+  }
+  .home-header1 {
+    font-size: 1.2rem;
+  }
+  .home-header2 {
+    font-size: 1rem;
+  }
+  .right-image {
+    max-width: 450px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 70em) {
+  .section-one {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+@keyframes Slide_Up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes Slide_Down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
