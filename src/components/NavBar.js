@@ -10,11 +10,11 @@ const NavBar = () => {
             fontSize: "1.7rem",
             color: "black",
             fontWeight: "bold",
-            marginLeft: "30px",
-            fontFamily: "Patua One",
+            marginLeft: "35px",
+            fontFamily: "Vogue",
           }}
         >
-          Z Y L A
+          ZYLA
         </p>
       </Link>
     </div>
