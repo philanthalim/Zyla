@@ -1,10 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer";
 import lovet from "../images/lovetPink2.jpeg";
-import ShopDropDown from "../components/Review/ShopDropDown";
-import CategoryDropDown from "../components/Review/CategoryDropDown";
-import RatingDropDown from "../components/Review/RatingDropDown";
-import CommentReview from "../components/Review/CommentReview";
+import ShopDropDown from "./ShopDropDown";
+import CategoryDropDown from "./CategoryDropDown";
+import RatingDropDown from "./RatingDropDown";
+import CommentReview from "./CommentReview";
 
 const WriteReview = () => {
   return (

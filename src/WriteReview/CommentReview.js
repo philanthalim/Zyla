@@ -16,9 +16,10 @@ const CommentReview = () => {
         Here's your chance to be specific and let others know what to expect!
       </p>
       <textarea
+        maxLength={200}
         onChange={(e) => setComment(e.target.value)}
         className="text-area"
-        placeholder="Write about your experience!"
+        placeholder="Write about your experience! You can talk about the fit, comfort and quality of the item!"
       ></textarea>
       <Link style={{ textDecoration: "none" }} to={"/submitted"}>
         <button className="submit-btn">Submit</button>

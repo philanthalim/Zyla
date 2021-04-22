@@ -1,11 +1,12 @@
 //import logo from './logo.svg';
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
-import Submitted from "./pages/Submitted";
-import SearchResults from "./pages/SearchResults";
-import WriteReview from "./pages/WriteReview";
-import ViewShop from "./pages/ViewShop";
+import Home from "./Home/Home";
+import Submitted from "./SubmittedPage/Submitted";
+import SearchResults from "./SearchResults/SearchResults";
+import WriteReview from "./WriteReview/WriteReview";
+import ViewShop from "./ViewShopPage/ViewShop";
+import ScrollToTop from "./components/ScrollToTop";
 import "./styles/Home.css";
 import "./styles/NavBar.css";
 import "./styles/Footer.css";
@@ -15,6 +16,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Switch>
         <Route exact path="/">
@@ -29,7 +31,7 @@ function App() {
         <Route exact path="/rate">
           <WriteReview />
         </Route>
-        <Route exact path="/view-shop">
+        <Route exact path="/view-shop/:shop">
           <ViewShop />
         </Route>
       </Switch>

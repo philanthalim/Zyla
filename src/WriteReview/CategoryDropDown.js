@@ -12,6 +12,7 @@ const CategoryDropDown = () => {
         <option>Bottoms</option>
         <option>Accessories</option>
         <option>Footwear</option>
+        <option>One-piece</option>
       </select>
     </div>
   );
