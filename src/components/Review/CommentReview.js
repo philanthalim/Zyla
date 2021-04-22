@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const CommentReview = () => {
   const [comment, setComment] = useState("");
@@ -14,7 +15,9 @@ const CommentReview = () => {
         className="text-area"
         placeholder="Write about your experience!"
       ></textarea>
-      <button className="submit-btn">Submit</button>
+      <Link to={"/submitted"}>
+        <button className="submit-btn">Submit</button>
+      </Link>
     </div>
   );
 };
