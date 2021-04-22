@@ -13,7 +13,7 @@ const Footer = () => {
       }}
     >
       <div className="footer-left">
-        <h3 style={{ color: "#E892AD" }}>NoFilter</h3>
+        <h3 style={{ fontFamily: "Patua One", fontSize: "1.3rem" }}>Z Y L A</h3>
         <p>About Us</p>
         <p>Write a review</p>
       </div>

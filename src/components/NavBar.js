@@ -7,13 +7,14 @@ const NavBar = () => {
       <Link to={"/"} style={{ textDecoration: "none" }}>
         <p
           style={{
-            fontSize: "1.6rem",
-            color: "#E892AD",
+            fontSize: "1.7rem",
+            color: "black",
             fontWeight: "bold",
-            marginLeft: "20px",
+            marginLeft: "30px",
+            fontFamily: "Patua One",
           }}
         >
-          No<span style={{ color: "black" }}>Filter</span>
+          Z Y L A
         </p>
       </Link>
     </div>

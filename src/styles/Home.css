@@ -55,7 +55,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(236, 167, 189, 0.2);
 }
 .bottom {
   width: 100%;
@@ -88,7 +87,10 @@ li {
 }
 @media (max-width: 50em) {
   .section-one {
-    margin-top: 6vh;
+    margin-top: 4vh;
+  }
+  .section-two {
+    margin-top: 8vh;
   }
   .home-img-container {
     height: 45vh;
