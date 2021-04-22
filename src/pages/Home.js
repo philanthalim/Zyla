@@ -20,7 +20,7 @@ const Home = () => {
         <img className="home-img" src={LB1} alt="BlogShopImg"></img>
         <div className="home-layover">
           <h3 className="home-header1">
-            A better way to make easier decisions
+            A better way to make decisions
           </h3>
           <form onSubmit={submitQuery}>
             <input
