@@ -83,10 +83,10 @@ select {
     font-size: 2rem;
   }
   .text-area {
-    width: 400px;
+    width: 300px;
   }
   .review-two-div {
-    padding: 0;
+    padding: 20px;
     background-color: null;
     font-size: 1.4rem;
   }
