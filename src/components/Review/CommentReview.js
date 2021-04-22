@@ -15,7 +15,7 @@ const CommentReview = () => {
         className="text-area"
         placeholder="Write about your experience!"
       ></textarea>
-      <Link to={"/submitted"}>
+      <Link style={{ textDecoration: "none" }} to={"/submitted"}>
         <button className="submit-btn">Submit</button>
       </Link>
     </div>

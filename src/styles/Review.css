@@ -26,20 +26,23 @@
   font-size: 1.5rem;
 }
 .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   width: 80px;
   height: 40px;
   font-size: 1rem;
-  background-color: white;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   border: 1px solid #e892ad;
   color: #e892ad;
+  font-weight: bold;
 }
-.submit-btn :hover {
+.submit-btn:hover {
   background-color: #e892ad;
-  border: none;
   border: 1px solid #e892ad;
   color: white;
 }
@@ -84,6 +87,8 @@ select {
   }
   .text-area {
     width: 310px;
+    height: 240px;
+    font-size: 1.2rem;
   }
   .review-two-div {
     padding: 20px;
