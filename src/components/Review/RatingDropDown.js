@@ -3,7 +3,7 @@ import React from "react";
 const RatingDropDown = () => {
   return (
     <div>
-      <div className="rate-div">
+      <div className="rate-container">
         <p style={{ marginRight: "20px" }}>
           Rate the{" "}
           <span style={{ color: "#e892ad", fontWeight: "bold" }}>fit </span>
@@ -17,7 +17,7 @@ const RatingDropDown = () => {
           <option>5</option>
         </select>
       </div>
-      <div className="rate-div">
+      <div className="rate-container">
         <p style={{ marginRight: "20px" }}>
           Rate the{" "}
           <span style={{ color: "#e892ad", fontWeight: "bold" }}>comfort </span>{" "}
@@ -31,7 +31,7 @@ const RatingDropDown = () => {
           <option>5</option>
         </select>
       </div>
-      <div className="rate-div">
+      <div className="rate-container">
         <p style={{ marginRight: "20px" }}>
           Rate the{" "}
           <span style={{ color: "#e892ad", fontWeight: "bold" }}>quality </span>{" "}

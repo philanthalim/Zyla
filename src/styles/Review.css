@@ -17,6 +17,9 @@
   background-color: null;
   font-size: 1.4rem;
 }
+.review-two-header {
+  font-size: 2.4rem;
+}
 .text-area {
   width: 600px;
   height: 40vh;
@@ -43,14 +46,17 @@
 .shop-cat-select {
   width: 300px;
   font-size: 1.1rem;
+  height: 40px;
 }
-.rate-div {
+.rate-container {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  align-items: center;
 }
 .rate-select {
   width: 35px;
+  height: 25px;
   font-size: 1.1rem;
 }
 .review-input {
@@ -61,13 +67,30 @@
   outline: 0;
   border-width: 0 0 2px;
 }
+.shop-cat-dd-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+/*
 select {
   border: 0px;
   outline: 0px;
-  border-width: 0 0 2px;
-}
+  
+}*/
 @media (max-width: 45em) {
+  .review-two-header {
+    font-size: 2rem;
+  }
   .text-area {
     width: 400px;
+  }
+  .review-two-div {
+    padding: 0;
+    background-color: null;
+    font-size: 1.4rem;
+  }
+  .shop-cat-dd-container {
+    flex-direction: column;
   }
 }

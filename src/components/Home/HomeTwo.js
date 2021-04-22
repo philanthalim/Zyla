@@ -1,7 +1,7 @@
 import React from "react";
-import LB from "../images/LB.png";
-import mgp from "../images/mgp.png";
-import fashmob from "../images/fashmob.png";
+import LB from "/Users/PhijuFile/Desktop/nofilter/client/src/images/LB.png";
+import mgp from "/Users/PhijuFile/Desktop/nofilter/client/src/images/mgp.png";
+import fashmob from "/Users/PhijuFile/Desktop/nofilter/client/src/images/fashmob.png";
 
 const HomeTwo = () => {
   return (

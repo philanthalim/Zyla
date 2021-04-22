@@ -1,10 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer";
 import lovet from "../images/lovetPink2.jpeg";
-import ShopDropDown from "../components/ShopDropDown";
-import CategoryDropDown from "../components/CategoryDropDown";
-import RatingDropDown from "../components/RatingDropDown";
-import CommentReview from "../components/CommentReview";
+import ShopDropDown from "../components/Review/ShopDropDown";
+import CategoryDropDown from "../components/Review/CategoryDropDown";
+import RatingDropDown from "../components/Review/RatingDropDown";
+import CommentReview from "../components/Review/CommentReview";
 
 const WriteReview = () => {
   return (
@@ -14,7 +14,7 @@ const WriteReview = () => {
         <h3 style={{ position: "absolute", color: "white" }}>Write a Review</h3>
       </div>
       <div className="review-two-div">
-        <h1>
+        <h1 className="review-two-header">
           Write a <span style={{ color: "#e892ad" }}>Review</span>
         </h1>
         <ShopDropDown />

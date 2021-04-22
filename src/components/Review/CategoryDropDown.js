@@ -2,7 +2,7 @@ import React from "react";
 
 const CategoryDropDown = () => {
   return (
-    <div style={{ display: "flex", marginBottom: "20px" }}>
+    <div className="shop-cat-dd-container">
       <p style={{ marginRight: "20px" }}>
         Select{" "}
         <span style={{ color: "#e892ad", fontWeight: "bold" }}>Category</span>

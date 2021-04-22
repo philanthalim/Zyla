@@ -1,9 +1,9 @@
 import React from "react";
 import LB1 from "../images/LB3.jpeg";
 import Footer from "../components/Footer";
-import HomeThree from "../components/HomeThree";
-import HomeTwo from "../components/HomeTwo";
-import HomeOne from "../components/HomeOne";
+import HomeThree from "../components/Home/HomeThree";
+import HomeTwo from "../components/Home/HomeTwo";
+import HomeOne from "../components/Home/HomeOne";
 import { useState } from "react";
 import { useHistory, Link } from "react-router-dom";
 
