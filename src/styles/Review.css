@@ -92,5 +92,7 @@ select {
   }
   .shop-cat-dd-container {
     flex-direction: column;
+    background-color: wheat;
+    align-items: flex-start;
   }
 }

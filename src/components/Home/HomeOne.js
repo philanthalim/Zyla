@@ -1,5 +1,5 @@
 import React from "react";
-import DreaChong from "/Users/PhijuFile/Desktop/nofilter/client/src/images/DreaChong.jpg";
+import DreaChong from "./DreaChong.jpg";
 
 const HomeOne = () => {
   return (
