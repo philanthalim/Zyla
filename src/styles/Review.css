@@ -83,7 +83,7 @@ select {
     font-size: 2rem;
   }
   .text-area {
-    width: 300px;
+    width: 250px;
   }
   .review-two-div {
     padding: 20px;
@@ -92,7 +92,7 @@ select {
   }
   .shop-cat-dd-container {
     flex-direction: column;
-    background-color: wheat;
+    background-color: null;
     align-items: flex-start;
   }
 }
