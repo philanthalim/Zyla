@@ -1,5 +1,5 @@
 import React from "react";
-import LB1 from "../images/LB3.jpeg";
+import LB1 from "../images/colors.jpeg";
 import Footer from "../components/Footer";
 import HomeThree from "../components/Home/HomeThree";
 import HomeTwo from "../components/Home/HomeTwo";

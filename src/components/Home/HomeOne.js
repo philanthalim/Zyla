@@ -1,5 +1,5 @@
 import React from "react";
-import DreaChong from "./DreaChong.jpg";
+import DreaChong from "./aim.jpeg";
 
 const HomeOne = () => {
   return (
