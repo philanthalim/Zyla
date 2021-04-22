@@ -55,7 +55,7 @@
   align-items: center;
 }
 .rate-select {
-  width: 45px;
+  width: 55px;
   height: 35px;
   font-size: 1.1rem;
 }
@@ -83,7 +83,7 @@ select {
     font-size: 2rem;
   }
   .text-area {
-    width: 280px;
+    width: 295px;
   }
   .review-two-div {
     padding: 20px;
