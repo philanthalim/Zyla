@@ -4,7 +4,16 @@
   border-top: 1px solid grey;
   padding-left: 40px;
   padding-right: 40px;
- 
+}
+.rating-container-1 {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+.rating-container-2 {
+  margin-top: -25px;
+  font-size: 1.2rem;
 }
 .user-img {
   width: 140px;
@@ -17,5 +26,11 @@
   .user-img {
     width: 100px;
     height: 100px;
+  }
+  .rating-container-1 {
+    font-size: 0.95rem;
+  }
+  .rating-container-2 {
+    font-size: 0.8rem;
   }
 }

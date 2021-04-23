@@ -14,7 +14,7 @@ const ViewShop = () => {
       comment:
         "Don't get the hype around this pants.. cutting is so off and material feels scratchy!",
       rating: 3,
-      date: "21 Apr",
+      date: "21 May",
     },
     {
       title: "Koreen Dress",
@@ -46,24 +46,15 @@ const ViewShop = () => {
       <div style={{}}>
         {list.map((item) => (
           <div className="rating-container">
-            <div
-              style={{
-                display: "flex",
-                fontWeight: "bold",
-                fontSize: "1.2rem",
-                justifyContent: "space-between",
-              }}
-            >
+            <div className="rating-container-1">
               <p>{item.title.toUpperCase()}</p>
               <p style={{}}>{item.rating}.0</p>
             </div>
-            <p style={{ marginTop: "-3px", fontSize: "1.1rem" }}>
-              {item.comment}
-            </p>
-            <img className="user-img" src={item.image} alt="userImg"></img>
-            <p style={{ color: "grey", fontSize: "1rem" }}>
-              Reviewed on {item.date}
-            </p>
+            <div className="rating-container-2">
+              <p>{item.comment}</p>
+              <img className="user-img" src={item.image} alt="userImg"></img>
+              <p>Reviewed on {item.date}</p>
+            </div>
           </div>
         ))}
       </div>

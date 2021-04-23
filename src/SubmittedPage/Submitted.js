@@ -5,9 +5,11 @@ import lovet from "../images/ilo.jpeg";
 const Submitted = () => {
   return (
     <div>
-      <div className="submitted-container">
-        <img className="submitted-img" alt="" src={lovet}></img>
-        <h3 style={{ position: "absolute" }}>Thanks for rating!</h3>
+       <div className="search-header-container">
+        <img className="search-header-img" src={lovet} alt="lovet"></img>
+        <h3 style={{ position: "absolute", color: "white" }}>
+          Thanks for rating!
+        </h3>
       </div>
       <div style={{ height: "30vh" }}></div>
       <Footer />
