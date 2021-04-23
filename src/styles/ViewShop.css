@@ -4,11 +4,11 @@
   border-top: 1px solid grey;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 30px;
+ 
 }
 .user-img {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
 }
 @media (max-width: 45em) {
   .rating-container {
