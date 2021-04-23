@@ -7,7 +7,7 @@ import SearchResults from "./SearchResults/SearchResults";
 import WriteReview from "./WriteReview/WriteReview";
 import ViewShop from "./ViewShopPage/ViewShop";
 import ScrollToTop from "./components/ScrollToTop";
-import "./styles/SearchResults";
+import "./styles/SearchResults.css";
 import "./styles/Home.css";
 import "./styles/NavBar.css";
 import "./styles/Footer.css";
