@@ -34,43 +34,13 @@ const ViewShop = () => {
   ];
   return (
     <div>
-      <div
-        style={{
-          height: "55vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "2rem",
-          position: "relative",
-        }}
-      >
-        <img
-          style={{
-            objectFit: "cover",
-            height: "100%",
-            width: "100%",
-            filter: "brightness(60%)",
-          }}
-          src={lovet}
-          alt="lovet"
-        ></img>
-        <h3 style={{ position: "absolute", color: "white" }}>Lovet</h3>
+      <div className="search-header-container">
+        <img className="search-header-img" src={lovet} alt="lovet"></img>
+        <h3 style={{ position: "absolute", color: "white" }}>Search Results</h3>
       </div>
       <div style={{}}>
         {list.map((item) => (
-          <div
-            style={{
-              margin: "30px",
-              backgroundColor: "null",
-              border: "1px",
-              borderColor: "grey",
-              borderStyle: "solid",
-              paddingLeft: "40px",
-              paddingRight: "40px",
-              paddingBottom: "30px",
-              borderRadius: "30px",
-            }}
-          >
+          <div className="rating-container">
             <div
               style={{ display: "flex", fontWeight: "bold", fontSize: "1rem" }}
             >
@@ -81,11 +51,7 @@ const ViewShop = () => {
               </p>
             </div>
             <p>{item.comment}</p>
-            <img
-              src={item.image}
-              style={{ width: "200px", height: "200px" }}
-              alt=""
-            ></img>
+            <img className="user-img" src={item.image} alt="userImg"></img>
             <p>Reviewed on {item.date}</p>
           </div>
         ))}

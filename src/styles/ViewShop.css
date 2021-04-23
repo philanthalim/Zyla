@@ -1,0 +1,21 @@
+.rating-container {
+  margin: 30px;
+  background-color: null;
+  border-top: 1px solid grey;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+}
+.user-img {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 45em) {
+  .rating-container {
+    padding: 0px;
+  }
+  .user-img {
+    width: 100px;
+    height: 100px;
+  }
+}
