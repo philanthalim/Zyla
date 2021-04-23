@@ -46,26 +46,8 @@ const SearchResults = () => {
   };
   return (
     <div>
-      <div
-        style={{
-          height: "55vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "2rem",
-          color: "rgba(0, 0, 0, 0.8)",
-        }}
-      >
-        <img
-          style={{
-            objectFit: "cover",
-            height: "100%",
-            width: "100%",
-            filter: "brightness(55%)",
-          }}
-          src={lovet}
-          alt="lovet"
-        ></img>
+      <div className="search-header-container">
+        <img className="search-header-img" src={lovet} alt="lovet"></img>
         <h3 style={{ position: "absolute", color: "white" }}>Search Results</h3>
       </div>
       {list.map((shop) => (
@@ -73,23 +55,8 @@ const SearchResults = () => {
           to={`/view-shop/${shop.shop}`}
           style={{ textDecoration: "none", color: "black" }}
         >
-          <div
-            style={{
-              fontSize: "1.5rem",
-              backgroundColor: "null",
-              margin: "20px",
-              display: "flex",
-              alignItems: "center",
-              border: "1px",
-              borderColor: "grey",
-              borderStyle: "solid",
-            }}
-          >
-            <img
-              alt=""
-              src={shopImage(shop)}
-              style={{ width: "200px", height: "200px" }}
-            ></img>
+          <div className="list-search-container">
+            <img className="list-search-img" alt="" src={shopImage(shop)}></img>
             <p style={{ marginLeft: "20px", fontSize: "1.8rem" }}>
               {shop.shop}
             </p>
