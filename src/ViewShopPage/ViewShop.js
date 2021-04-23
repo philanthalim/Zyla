@@ -1,5 +1,6 @@
 import React from "react";
 import lovet from "../images/lovetPink2.jpeg";
+import Footer from "../components/Footer";
 //import { useLocation } from "react-router-dom";
 const ViewShop = () => {
   //const { shopName } = useLocation();
@@ -39,11 +40,25 @@ const ViewShop = () => {
     <div>
       <div className="search-header-container">
         <img className="search-header-img" src={lovet} alt="lovet"></img>
-        <h3 style={{ position: "absolute", color: "white" }}>
-          Younghungryfree
-        </h3>
+        <div
+          style={{
+            position: "absolute",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          <h3 style={{ color: "white" }}>Younghungryfree</h3>
+         
+        </div>
       </div>
-      <div style={{}}>
+
+      <div>
+        <h3 style={{ color: "black", marginLeft: "4.1rem", fontSize: "1.8rem" }}>
+          3 Reviews (4.3/10)
+        </h3>
         {list.map((item) => (
           <div className="rating-container">
             <div className="rating-container-1">
@@ -58,6 +73,7 @@ const ViewShop = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
