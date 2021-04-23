@@ -82,6 +82,9 @@ select {
   
 }*/
 @media (max-width: 45em) {
+  .review-one-div {
+    height: 45vh;
+  }
   .review-two-header {
     font-size: 2rem;
   }
