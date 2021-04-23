@@ -57,7 +57,7 @@ const SearchResults = () => {
         >
           <div className="list-search-container">
             <img className="list-search-img" alt="" src={shopImage(shop)}></img>
-            <p style={{ marginLeft: "20px", fontSize: "1.8rem" }}>
+            <p style={{ marginLeft: "20px"}}>
               {shop.shop}
             </p>
           </div>

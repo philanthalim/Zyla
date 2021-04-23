@@ -13,8 +13,8 @@
   filter: brightness(55%);
 }
 .list-search-container {
-  font-size: "1.5rem";
-  background-color: "null";
+  font-size: 1.5rem;
+  background-color: null;
   margin: 20px;
   display: flex;
   align-items: center;
@@ -34,5 +34,8 @@
   .list-search-img {
     width: 100px;
     height: 100px;
+  }
+  .list-search-container {
+    font-size: 1.3rem;
   }
 }
