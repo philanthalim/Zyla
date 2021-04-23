@@ -21,6 +21,7 @@ const DropDown = () => {
         <option>Mikalya</option>
         <option>Cheris</option>
         <option>MDS</option>
+        <option>Fayth</option>
       </select>
     </div>
   );

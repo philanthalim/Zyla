@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const SearchResults = () => {
   const list = [
-    { shop: "Lovet", reviews: 5 },
+    { shop: "Topazette", reviews: 5 },
     { shop: "LoveBonito", reviews: 10 },
     { shop: "FashMob", reviews: 5 },
     { shop: "Mikayla", reviews: 5 },
@@ -23,18 +23,18 @@ const SearchResults = () => {
     } else if (shop.shop === "MGP") {
       image =
         "https://s3-ap-southeast-1.amazonaws.com/s3.loopme.my/img/newos/brands/2x/iP5FDs6hxGTZEf0p.png";
-    } else if (shop.shop === "FaythLabel") {
+    } else if (shop.shop === "Fayth") {
       image =
-        "https://i.pinimg.com/280x280_RS/4a/c2/1e/4ac21e942dfad28c9f9872b4f59aaf67.jpg";
+        "https://scontent.fsin2-1.fna.fbcdn.net/v/t1.18169-9/10458352_740069446050743_5956947963399280155_n.png?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=lN-eU0bJcloAX_IE3UI&_nc_ht=scontent.fsin2-1.fna&oh=00a24a0006afc0141e86e2a673328938&oe=60A7BD1C";
     } else if (shop.shop === "Mikayla") {
       image =
-        "https://d3991d7jsoecwn.cloudfront.net/sites/files/mikayla/productimg/202104/600x900/DSC04723.jpg";
+        "https://scontent.fsin2-1.fna.fbcdn.net/v/t1.6435-9/67685756_437726993489265_907378314488840192_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=u8IneczKKpAAX88Sfhe&_nc_ht=scontent.fsin2-1.fna&oh=d1101bf92ab43bd285d04e0d0455168e&oe=60A6A4DC";
     } else if (shop.shop === "FashMob") {
       image =
-        "https://map.capitaland.com/funan/infos/FUN/commonfiles/store/FUN_ST_LOGO_1596740165567.jpeg";
+        "https://scontent.fsin2-1.fna.fbcdn.net/v/t1.18169-9/970307_562902737081056_1038139852_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=lXltRozfwjwAX8_dAHM&_nc_ht=scontent.fsin2-1.fna&oh=54f2ad073c20a21df845431a846ca664&oe=60A5FDAF";
     } else if (shop.shop === "Supergurl") {
       image =
-        "https://media.glassdoor.com/sqll/2508163/supergurl-squarelogo-1582616564454.png";
+        "https://scontent.fsin2-1.fna.fbcdn.net/v/t1.18169-9/10426333_10153139475180465_4537922641551804275_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=eZRRw_SfsE8AX_rWhbr&_nc_ht=scontent.fsin2-1.fna&oh=635c0eca66315e730c0303bd5f07931c&oe=60A8D134";
     } else if (shop.shop === "Ohvola") {
       image =
         "data:image/png;base64,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";
@@ -48,7 +48,9 @@ const SearchResults = () => {
     <div>
       <div className="search-header-container">
         <img className="search-header-img" src={lovet} alt="lovet"></img>
-        <h3 style={{ position: "absolute", color: "white" }}>Search Results</h3>
+        <h3 style={{ position: "absolute", color: "white" }}>
+          4 Search Results for 'Lovet'
+        </h3>
       </div>
       {list.map((shop) => (
         <Link
@@ -57,9 +59,7 @@ const SearchResults = () => {
         >
           <div className="list-search-container">
             <img className="list-search-img" alt="" src={shopImage(shop)}></img>
-            <p style={{ marginLeft: "20px"}}>
-              {shop.shop}
-            </p>
+            <p style={{ marginLeft: "20px" }}>{shop.shop}</p>
           </div>
         </Link>
       ))}
