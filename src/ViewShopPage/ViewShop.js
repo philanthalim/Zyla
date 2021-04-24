@@ -51,14 +51,16 @@ const ViewShop = () => {
         >
           {" "}
           <h3 style={{ color: "white" }}>Younghungryfree</h3>
-         
+          <h3
+            style={{ color: "white", fontSize: "1.8rem", marginTop: "-10px" }}
+          >
+            3 Reviews (4.3)
+          </h3>
         </div>
       </div>
 
       <div>
-        <h3 style={{ color: "black", marginLeft: "4.1rem", fontSize: "1.8rem" }}>
-          3 Reviews (4.3/10)
-        </h3>
+        <div style={{ height: "10px" }}></div>
         {list.map((item) => (
           <div className="rating-container">
             <div className="rating-container-1">
