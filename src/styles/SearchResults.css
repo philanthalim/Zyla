@@ -29,7 +29,8 @@
 
 @media (max-width: 45em) {
   .search-header-container {
-    height: 45vh;
+    height: 40vh;
+    font-size: 1.7rem;
   }
   .list-search-img {
     width: 100px;

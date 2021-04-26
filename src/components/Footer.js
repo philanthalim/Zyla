@@ -18,8 +18,8 @@ const Footer = () => {
         <p>Write a review</p>
       </div>
       <div className="footer-right">
-        <p>Contact Us</p>
-        <p>nofilter@gmail.com</p>
+        <h4>Contact Us</h4>
+        <p>zylasg@gmail.com</p>
       </div>
     </div>
   );

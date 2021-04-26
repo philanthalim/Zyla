@@ -50,17 +50,13 @@ const ViewShop = () => {
           }}
         >
           {" "}
-          <h3 style={{ color: "white" }}>Younghungryfree</h3>
-          <h3
-            style={{ color: "white", fontSize: "1.8rem", marginTop: "-10px" }}
-          >
-            3 Reviews (4.3)
-          </h3>
+          <h3 className="overlay-header">Younghungryfree</h3>
+          <h3 className="overlay-sub-header">3 Reviews (4.3)</h3>
         </div>
       </div>
 
       <div>
-        <div style={{ height: "10px" }}></div>
+        <div style={{ height: "15px" }}></div>
         {list.map((item) => (
           <div className="rating-container">
             <div className="rating-container-1">
@@ -75,7 +71,7 @@ const ViewShop = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 };
