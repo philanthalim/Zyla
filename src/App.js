@@ -7,6 +7,7 @@ import SearchResults from "./SearchResults/SearchResults";
 import WriteReview from "./WriteReview/WriteReview";
 import ViewShop from "./ViewShopPage/ViewShop";
 import ScrollToTop from "./components/ScrollToTop";
+import About from "./AboutUs/About";
 import "./styles/SearchResults.css";
 import "./styles/Home.css";
 import "./styles/NavBar.css";
@@ -48,6 +49,9 @@ function App() {
           <Route component={SearchResults} exact path="/search/:shop"></Route>
           <Route exact path="/rate">
             <WriteReview />
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
           <Route component={ViewShop} exact path="/view-shop/:shop"></Route>
         </Switch>

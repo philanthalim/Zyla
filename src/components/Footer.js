@@ -14,8 +14,12 @@ const Footer = () => {
     >
       <div className="footer-left">
         <h3 style={{ fontFamily: "Vogue", fontSize: "1.3rem" }}>ZYLA</h3>
-        <p>About Us</p>
-        <p>Write a review</p>
+        <a style={{ textDecoration: "none", color: "black" }} href="/about">
+          About Us
+        </a>
+        <a style={{ textDecoration: "none", color: "black" }} href="/rate">
+          Write a review
+        </a>
       </div>
       <div className="footer-right">
         <h4>Contact Us</h4>

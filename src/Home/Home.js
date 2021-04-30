@@ -16,7 +16,7 @@ const Home = () => {
       state: { query: query },
     }); //navigate to searchResults after clicking enter
   };
-  //console.log(query);
+
   return (
     <div>
       <div className="home-img-container">
