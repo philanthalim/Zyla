@@ -1,11 +1,14 @@
 import React from "react";
 import LB1 from "../images/colors.jpeg";
+import ilo from "../images/ilo.jpeg";
 import Footer from "../components/Footer";
 import HomeThree from "./HomeThree";
 import HomeTwo from "./HomeTwo";
 import HomeOne from "./HomeOne";
 import { useState } from "react";
 import { useHistory, Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -20,7 +23,19 @@ const Home = () => {
   return (
     <div>
       <div className="home-img-container">
-        <img className="home-img" src={LB1} alt="BlogShopImg"></img>
+       
+          <Carousel 
+            className="home-img"
+            infiniteLoop={true}
+            showThumbs={false}
+            autoPlay
+            interval={3000}
+          >
+            <img className='home-img' src={LB1} alt="BlogShopImg"></img>
+            <img  className='home-img' src={ilo} alt="BlogShopImg"></img>
+          </Carousel>
+      
+
         <div className="home-layover">
           <h3 className="home-header1">A better way to make decisions</h3>
           <form onSubmit={submitQuery}>
