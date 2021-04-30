@@ -22,7 +22,7 @@ const DropDown = () => {
         <option>Carrislabelle</option>
         <option>Younghungryfree</option>
         <option>Runwaybandits</option>
-        <option>Mikalya</option>
+        <option>Mikayla</option>
         <option>Ohvola</option>
         <option>Shopsassydream</option>
         <option>Fayth</option>
