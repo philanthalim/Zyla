@@ -1,13 +1,21 @@
-import React from "react";
+import React, {  useContext } from "react";
+import { ReviewContext } from "../context";
 
 const DropDown = () => {
+  const { setShop} = useContext(ReviewContext);
+  const onSelect = (e) => {
+    setShop(e.target.value);
+  };
+  
   return (
     <div className="shop-cat-dd-container">
       <p style={{ marginRight: "20px" }}>
-        Select{" "}
-        <span style={{ color: "#e892ad", fontWeight: "bold" }}>Blogshop</span>{" "}
+        Select
+        <span style={{ color: "#e892ad", fontWeight: "bold" }}>
+          Blogshop
+        </span>{" "}
       </p>
-      <select className="shop-cat-select">
+      <select className="shop-cat-select" onChange={(e) => onSelect(e)}>
         <option>Love Bonito</option>
         <option>Lovet</option>
         <option>Shopsassydream</option>

@@ -14,30 +14,45 @@ import "./styles/Footer.css";
 import "./styles/Review.css";
 import "./styles/ViewShop.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ReviewContext } from "./context";
+import { useState } from "react";
 
 function App() {
+  const [shop, setShop] = useState("Love Bonito");
+  const [category, setCategory] = useState("Tops");
+  const [rating, setRating] = useState(1);
+  const [comment, setComment] = useState("");
   return (
-    <Router>
-      <ScrollToTop />
-      <NavBar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/submitted">
-          <Submitted />
-        </Route>
-        <Route exact path="/search">
-          <SearchResults />
-        </Route>
-        <Route exact path="/rate">
-          <WriteReview />
-        </Route>
-        <Route exact path="/view-shop/:shop">
-          <ViewShop />
-        </Route>
-      </Switch>
-    </Router>
+    <ReviewContext.Provider
+      value={{
+        shop,
+        setShop,
+        category,
+        setCategory,
+        rating,
+        setRating,
+        comment,
+        setComment,
+      }}
+    >
+      <Router>
+        <ScrollToTop />
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/submitted">
+            <Submitted />
+          </Route>
+          <Route component={SearchResults} exact path="/search/:shop"></Route>
+          <Route exact path="/rate">
+            <WriteReview />
+          </Route>
+          <Route component={ViewShop} exact path="/view-shop/:shop"></Route>
+        </Switch>
+      </Router>
+    </ReviewContext.Provider>
   );
 }
 

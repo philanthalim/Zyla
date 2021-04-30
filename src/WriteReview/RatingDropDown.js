@@ -1,6 +1,13 @@
-import React from "react";
+import React, {useContext } from "react";
+import { ReviewContext } from "../context";
 
 const RatingDropDown = () => {
+  const { setRating } = useContext(ReviewContext);
+
+  const onSelect = (e) => {
+    setRating(parseInt(e.target.value));
+  };
+
   return (
     <div>
       <div className="rate-container">
@@ -11,7 +18,7 @@ const RatingDropDown = () => {
           </span>
           out of 10
         </p>
-        <select className="rate-select">
+        <select className="rate-select" onChange={(e) => onSelect(e)}>
           <option>1</option>
           <option>2</option>
           <option>3</option>

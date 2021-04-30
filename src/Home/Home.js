@@ -3,7 +3,7 @@ import LB1 from "../images/colors.jpeg";
 import Footer from "../components/Footer";
 import HomeThree from "./HomeThree";
 import HomeTwo from "./HomeTwo";
-import HomeOne from './HomeOne'
+import HomeOne from "./HomeOne";
 import { useState } from "react";
 import { useHistory, Link } from "react-router-dom";
 
@@ -11,7 +11,10 @@ const Home = () => {
   const [query, setQuery] = useState("");
   const history = useHistory();
   const submitQuery = () => {
-    history.push("/search"); //navigate to searchResults after clicking enter
+    history.push({
+      pathname: `/search/${query.replace(/\s+/g, "-").toLowerCase()}`,
+      state: { query: query },
+    }); //navigate to searchResults after clicking enter
   };
   //console.log(query);
   return (
@@ -19,9 +22,7 @@ const Home = () => {
       <div className="home-img-container">
         <img className="home-img" src={LB1} alt="BlogShopImg"></img>
         <div className="home-layover">
-          <h3 className="home-header1">
-            A better way to make decisions
-          </h3>
+          <h3 className="home-header1">A better way to make decisions</h3>
           <form onSubmit={submitQuery}>
             <input
               onChange={(e) => setQuery(e.target.value)}
@@ -30,10 +31,7 @@ const Home = () => {
               placeholder={"Search for BlogShops"}
             ></input>
           </form>
-          <Link
-            to={"/rate"}
-            style={{ textDecoration: "none", color: "black" }}
-          >
+          <Link to={"/rate"} style={{ textDecoration: "none", color: "black" }}>
             <p className="home-header2">Write a review</p>
           </Link>
         </div>

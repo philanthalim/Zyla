@@ -1,9 +1,13 @@
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { ReviewContext } from "../context";
 
 const CommentReview = () => {
-  const [comment, setComment] = useState("");
+  const { setComment } = useContext(ReviewContext);
+
+  const onHandleChange = (e) => {
+    setComment(e.target.value);
+  };
+
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <p>
@@ -16,14 +20,12 @@ const CommentReview = () => {
         Here's your chance to be specific and let others know what to expect!
       </p>
       <textarea
+        required
         maxLength={200}
-        onChange={(e) => setComment(e.target.value)}
+        onChange={(e) => onHandleChange(e)}
         className="text-area"
         placeholder="Write about your experience! You can talk about the fit, comfort and quality of the item!"
       ></textarea>
-      <Link style={{ textDecoration: "none" }} to={"/submitted"}>
-        <button className="submit-btn">Submit</button>
-      </Link>
     </div>
   );
 };

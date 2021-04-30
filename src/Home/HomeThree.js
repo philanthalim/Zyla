@@ -1,6 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeThree = () => {
+  const list1 = [
+    "Love Bonito",
+    "Lovet",
+    "Neonmello",
+    "Supergurl",
+    "Topazette",
+    "Carrislabelle",
+  ];
+
+  const list2 = [
+    "Runwaybandits",
+    "Mikayla",
+    "Ohvola",
+    "Shopsassydream",
+    "Fayth",
+    "TheWillowLabel",
+  ];
+
+  const list3 = [
+    "TheEditorsMarket",
+    "Anticlockwise",
+    "Blairwears",
+    "Lbrlabel",
+    "6styleco",
+    "TheClosetLover",
+  ];
   return (
     <div className="section-three">
       <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
@@ -15,28 +42,64 @@ const HomeThree = () => {
         }}
       >
         <ul style={{ width: "100px" }}>
-          <li>MGP</li>
-          <li>LoveBonito</li>
-          <li>Supergurl</li>
-          <li>Hervelvetvase</li>
-          <li>Carrislabelle</li>
-          <li>Lovet</li>
+          {list1.map((shop) => (
+            <Link
+              style={{
+                lineHeight: "60px",
+                display: "flex",
+                textDecoration: "none",
+                color: "black",
+              }}
+              to={{
+                pathname: `/view-shop/${shop
+                  .replace(/\s+/g, "-")
+                  .toLowerCase()}`,
+                state: { shop: shop },
+              }}
+            >
+              {shop}
+            </Link>
+          ))}
         </ul>
         <ul style={{ width: "100px" }}>
-          <li>Runwaybandits</li>
-          <li>Topazette</li>
-          <li>Mikayla</li>
-          <li>Shopsassydream</li>
-          <li>TheEditorsMarket</li>
-          <li>Ohvola</li>
+        {list2.map((shop) => (
+            <Link
+              style={{
+                lineHeight: "60px",
+                display: "flex",
+                textDecoration: "none",
+                color: "black",
+              }}
+              to={{
+                pathname: `/view-shop/${shop
+                  .replace(/\s+/g, "-")
+                  .toLowerCase()}`,
+                state: { shop: shop },
+              }}
+            >
+              {shop}
+            </Link>
+          ))}
         </ul>
         <ul style={{ width: "100px" }}>
-          <li>MDS</li>
-          <li>Anna</li>
-          <li>Zara</li>
-          <li>Fayth</li>
-          <li>Cheris</li>
-          <li>Stagewalk</li>
+        {list3.map((shop) => (
+            <Link
+              style={{
+                lineHeight: "60px",
+                display: "flex",
+                textDecoration: "none",
+                color: "black",
+              }}
+              to={{
+                pathname: `/view-shop/${shop
+                  .replace(/\s+/g, "-")
+                  .toLowerCase()}`,
+                state: { shop: shop },
+              }}
+            >
+              {shop}
+            </Link>
+          ))}
         </ul>
       </div>
     </div>
