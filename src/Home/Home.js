@@ -23,18 +23,16 @@ const Home = () => {
   return (
     <div>
       <div className="home-img-container">
-       
-          <Carousel 
-            className="home-img"
-            infiniteLoop={true}
-            showThumbs={false}
-            autoPlay
-            interval={3000}
-          >
-            <img className='home-img' src={LB1} alt="BlogShopImg"></img>
-            <img  className='home-img' src={ilo} alt="BlogShopImg"></img>
-          </Carousel>
-      
+        <Carousel
+          className="home-img"
+          infiniteLoop={true}
+          showThumbs={false}
+          autoPlay
+          interval={5000}
+        >
+          <img className="home-img" src={LB1} alt="BlogShopImg"></img>
+          <img className="home-img" src={ilo} alt="BlogShopImg"></img>
+        </Carousel>
 
         <div className="home-layover">
           <h3 className="home-header1">A better way to make decisions</h3>
