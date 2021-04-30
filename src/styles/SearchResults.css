@@ -5,6 +5,8 @@
   align-items: center;
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.8);
+  background-color: aqua;
+  flex-direction: column;
 }
 .search-header-img {
   object-fit: cover;

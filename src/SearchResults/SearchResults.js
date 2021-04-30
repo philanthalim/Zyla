@@ -30,7 +30,7 @@ const SearchResults = () => {
 
     setResultsList(newResultsList);
   };
-   console.log(resultsList)
+  
   useEffect(() => {
     getResults();
   }, []);

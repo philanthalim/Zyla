@@ -31,7 +31,7 @@ const HomeThree = () => {
   return (
     <div className="section-three">
       <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
-        Browse through reviews from 30+ blogshops
+        Browse through reviews from 20+ blogshops
       </h2>
       <div
         style={{
