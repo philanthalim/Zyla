@@ -21,12 +21,12 @@ const HomeThree = () => {
   ];
 
   const list3 = [
-    "TheEditorsMarket",
-    "Anticlockwise",
+    "Fash Mob",
+    "Hollyhoque",
     "Blairwears",
     "Lbrlabel",
     "6styleco",
-    "TheClosetLover",
+    "MGP",
   ];
   return (
     <div className="section-three">
@@ -62,7 +62,7 @@ const HomeThree = () => {
           ))}
         </ul>
         <ul style={{ width: "100px" }}>
-        {list2.map((shop) => (
+          {list2.map((shop) => (
             <Link
               style={{
                 lineHeight: "60px",
@@ -82,7 +82,7 @@ const HomeThree = () => {
           ))}
         </ul>
         <ul style={{ width: "100px" }}>
-        {list3.map((shop) => (
+          {list3.map((shop) => (
             <Link
               style={{
                 lineHeight: "60px",
