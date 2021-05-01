@@ -13,7 +13,7 @@ const About = () => {
         <h3>Real Reviews</h3>
         <p>
           At Zyla, we offer access to real reviews from paying customers like
-          yourself, so that consumers can make well-informed decisions.
+          yourself, so that consumers can make well-informed decisions in the vast online shopping landscape.
         </p>
         <p>
           It all started when I was scrolling through Instagram and came across
