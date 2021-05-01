@@ -1,0 +1,11 @@
+.about-container {
+  margin: 0 8rem 8rem 8rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+@media (max-width: 50em) {
+  .about-container {
+    margin: 0 2rem 2rem 2rem;
+    font-size: 0.8rem;
+  }
+}

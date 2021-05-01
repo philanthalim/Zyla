@@ -8,6 +8,7 @@ import WriteReview from "./WriteReview/WriteReview";
 import ViewShop from "./ViewShopPage/ViewShop";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./AboutUs/About";
+import "./styles/About.css";
 import "./styles/SearchResults.css";
 import "./styles/Home.css";
 import "./styles/NavBar.css";

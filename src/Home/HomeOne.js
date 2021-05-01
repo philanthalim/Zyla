@@ -10,7 +10,7 @@ const HomeOne = () => {
           <span style={{ color: "#E892AD" }}>easier</span>
         </h2>
         <p style={{ fontSize: "1.2rem" }}>
-          Read reviews for more than 30 blogshops in Singapore
+          Read reviews for more than 20 blogshops in Singapore
         </p>
       </div>
       <div className="right">
