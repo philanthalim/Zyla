@@ -16,7 +16,15 @@ const WriteReview = () => {
   const [image, setImage] = useState(
     "https://images.pexels.com/photos/3910065/pexels-photo-3910065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   );
-  const { shop, category, rating, comment } = useContext(ReviewContext);
+  const {
+    shop,
+    category,
+    rating,
+    comment,
+    setCategory,
+    setShop,
+    setRating,
+  } = useContext(ReviewContext);
 
   const handleImage = (e) => {
     const file = e.target.files[0];
@@ -37,6 +45,9 @@ const WriteReview = () => {
     );
   };
   const submitReview = () => {
+    setCategory("Tops"); //reset state after submitting form succesfully
+    setRating(1);
+    setShop("Love Bonito");
     Axios.post("https://zyla-app.herokuapp.com/api/reviews", {
       item: item,
       category: category,
