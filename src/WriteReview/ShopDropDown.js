@@ -20,11 +20,11 @@ const DropDown = () => {
         <option>Supergurl</option>
         <option>Topazette</option>
         <option>Carrislabelle</option>
-        <option>Younghungryfree</option>
-        <option>Runwaybandits</option>
+        <option>Young Hungry Free</option>
+        <option>Runway Bandits</option>
         <option>Mikayla</option>
         <option>Ohvola</option>
-        <option>Shopsassydream</option>
+        <option>MDS</option>
         <option>Fayth</option>
         <option>MGP</option>
         <option>Fash Mob</option>
@@ -33,7 +33,14 @@ const DropDown = () => {
         <option>Lbrlabel</option>
         <option>6styleco</option>
         <option>MGP</option>
-      
+        <option>Closet Lover</option>
+        <option>Tinsel Rack</option>
+        <option>Willow Label</option>
+        <option>Hervelvetvase</option>
+        <option>Loveandbravery</option>
+        <option>Editors Market</option>
+        <option>Wardrobemess</option>
+        <option>Modparade</option>
       </select>
     </div>
   );

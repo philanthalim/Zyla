@@ -9,15 +9,21 @@ const HomeThree = () => {
     "Supergurl",
     "Topazette",
     "Carrislabelle",
+    "Modparade",
+    "Hervelvetvase",
+    "Klarra",
   ];
 
   const list2 = [
-    "Runwaybandits",
+    "Runway Bandits",
     "Mikayla",
     "Ohvola",
-    "Shopsassydream",
+    "MDS",
     "Fayth",
-    "TheWillowLabel",
+    "Willow Label",
+    "Wardrobemess",
+    "Editors Market",
+    "Young Hungry Free",
   ];
 
   const list3 = [
@@ -27,6 +33,9 @@ const HomeThree = () => {
     "Lbrlabel",
     "6styleco",
     "MGP",
+    "Closet Lover",
+    "Tinsel Rack",
+    "Loveandbravery",
   ];
   return (
     <div className="section-three">
@@ -34,14 +43,17 @@ const HomeThree = () => {
         Browse through reviews from 20+ blogshops
       </h2>
       <div
-        style={{
-          flexDirection: "row",
-          backgroundColor: "null",
-          justifyContent: "space-evenly",
-          display: "flex",
-        }}
+        style={{ fontSize: "0.9rem", flexDirection: "row", display: "flex" }}
       >
-        <ul style={{ width: "100px" }}>
+        <div
+          style={{
+            width: "33.33%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           {list1.map((shop) => (
             <Link
               style={{
@@ -60,8 +72,16 @@ const HomeThree = () => {
               {shop}
             </Link>
           ))}
-        </ul>
-        <ul style={{ width: "100px" }}>
+        </div>
+        <div
+          style={{
+            width: "33.33%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           {list2.map((shop) => (
             <Link
               style={{
@@ -80,8 +100,16 @@ const HomeThree = () => {
               {shop}
             </Link>
           ))}
-        </ul>
-        <ul style={{ width: "100px" }}>
+        </div>
+        <div
+          style={{
+            width: "33.33%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           {list3.map((shop) => (
             <Link
               style={{
@@ -100,7 +128,7 @@ const HomeThree = () => {
               {shop}
             </Link>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
