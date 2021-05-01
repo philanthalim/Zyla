@@ -7,13 +7,35 @@ import CategoryDropDown from "./CategoryDropDown";
 import RatingDropDown from "./RatingDropDown";
 import CommentReview from "./CommentReview";
 import Axios from "axios";
+import Resizer from "react-image-file-resizer";
 import { useHistory } from "react-router-dom";
 
 const WriteReview = () => {
   const history = useHistory();
   const [item, setItem] = useState("");
+  const [image, setImage] = useState(
+    "https://images.pexels.com/photos/3910065/pexels-photo-3910065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  );
   const { shop, category, rating, comment } = useContext(ReviewContext);
 
+  const handleImage = (e) => {
+    const file = e.target.files[0];
+    resize(file);
+  };
+  const resize = (image1) => {
+    Resizer.imageFileResizer(
+      image1,
+      300,
+      300,
+      "JPEG",
+      100,
+      0,
+      (uri) => {
+        setImage(uri);
+      },
+      "base64"
+    );
+  };
   const submitReview = () => {
     Axios.post("https://zyla-app.herokuapp.com/api/reviews", {
       item: item,
@@ -21,8 +43,7 @@ const WriteReview = () => {
       shop: shop,
       rating: rating,
       comment: comment,
-      image:
-        "https://images.unsplash.com/photo-1619596658767-f3bbb82b0dee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+      image: image,
     });
   };
   const submitForm = () => {
@@ -57,6 +78,13 @@ const WriteReview = () => {
             ></input>
           </div>
           <RatingDropDown />
+          <input
+            style={{ marginTop: "20px", marginBottom: "20px" }}
+            type="file"
+            name="photo"
+            accept="image/*"
+            onChange={(e) => handleImage(e)}
+          ></input>
           <CommentReview />
           <button type="submit" className="submit-btn">
             Submit

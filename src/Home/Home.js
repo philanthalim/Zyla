@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div>
       <div className="home-img-container">
-        <Carousel
+        <Carousel showStatus={false}
           className="home-img"
           infiniteLoop={true}
           showThumbs={false}

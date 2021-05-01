@@ -8,14 +8,23 @@ import Loader from "react-loader-spinner";
 const ViewShop = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
-
+  const [avg, Setavg] = useState(1);
   const shop = location.state.shop; //get query state from SearchResults Routing
   const [reviews, setReviewsList] = useState([]);
-  let avg = 1.0;
+
+  const Avg = () => {
+    let sum = 0;
+    for (var i in reviews) {
+      sum += reviews[i].rating;
+    }
+    let avg1 = sum / reviews.length;
+    Setavg(avg1);
+  };
   const fetchReviews = async () => {
     await Axios.get(`https://zyla-app.herokuapp.com/api/reviews/${shop}`)
       .then((res) => setReviewsList(res.data))
-      .then(() => setLoading(false));
+      .then(() => setLoading(false))
+      .then(() => Avg());
   };
 
   useEffect(() => {
