@@ -1,5 +1,7 @@
 # SG Blogshop Review App
 
+Designed and developed by me. A platform for consumers to gain access to real reviews in the vast blogshopping landscape in Singapore. 
+
 https://zyla.netlify.app
 
 
@@ -14,5 +16,6 @@ https://zyla.netlify.app
   - HTML5, CSS3 and JavaScript
   - React
 
-# Remarks
-Designed and developed by me. A platform for consumers to gain access to real reviews in the vast blogshopping landscape in Singapore. 
+# Features
+User can select shop, category and upload his/her picture of the product. Allows searching of blogshops and browsing through reviews.
+
