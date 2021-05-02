@@ -5,12 +5,12 @@ https://zyla.netlify.app
 
 # Tech Stacks
 
--Backend
+- Backend
   - Node.js
   - Express.js
   - Mongoose and MongoDB
 
--Frontend
+- Frontend
   - HTML5, CSS3 and JavaScript
   - React
 
