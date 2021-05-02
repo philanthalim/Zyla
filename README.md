@@ -1,6 +1,6 @@
 # SG Blogshop Review App
 
-https://clever-neumann-7b1f36.netlify.app
+https://zyla.netlify.app
 
 
 # Tech Stacks
