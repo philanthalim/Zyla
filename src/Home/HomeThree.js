@@ -40,7 +40,7 @@ const HomeThree = () => {
   return (
     <div className="section-three">
       <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
-        Browse through reviews from 20+ blogshops
+        Browse through reviews for 20+ blogshops
       </h2>
       <div
         style={{ fontSize: "0.9rem", flexDirection: "row", display: "flex" }}

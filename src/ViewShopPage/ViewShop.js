@@ -8,25 +8,30 @@ import Loader from "react-loader-spinner";
 const ViewShop = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
-  const [avg, Setavg] = useState(1);
   const shop = location.state.shop; //get query state from SearchResults Routing
   const [reviews, setReviewsList] = useState([]);
 
-  const Avg = () => {
-    let sum = 0;
-    for (var i in reviews) {
-      sum += reviews[i].rating;
-    }
-    let avg1 = sum / reviews.length;
-    Setavg(avg1);
-  };
   const fetchReviews = async () => {
     await Axios.get(`https://zyla-app.herokuapp.com/api/reviews/${shop}`)
       .then((res) => setReviewsList(res.data))
-      .then(() => setLoading(false))
-      .then(() => Avg());
+      .then(() => setLoading(false));
   };
 
+  //Add function below,can't use hooks to update Avg Rating
+  //Received NaN initially as state wasn't updated
+  const calculate = () => {
+    let sum = 0;
+    let averageRating = 0;
+    for (let i in reviews) {
+      sum += reviews[i].rating;
+    }
+    averageRating = sum / reviews.length;
+    return isNaN(averageRating) ? (
+      ""
+    ) : (
+      <span>({averageRating.toFixed(1)})</span>
+    );
+  };
   useEffect(() => {
     fetchReviews();
   }, []);
@@ -47,7 +52,7 @@ const ViewShop = () => {
           {" "}
           <h3 className="overlay-header">{shop}</h3>
           <h3 className="overlay-sub-header">
-            {reviews.length} Reviews ({Math.round(avg)})
+            {reviews.length} Reviews {calculate()}
           </h3>
         </div>
       </div>
