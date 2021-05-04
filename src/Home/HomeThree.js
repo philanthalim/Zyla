@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 const HomeThree = () => {
   const list1 = [
@@ -39,9 +40,12 @@ const HomeThree = () => {
   ];
   return (
     <div className="section-three">
-      <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
-        Browse through reviews for 20+ blogshops
-      </h2>
+      <Fade bottom>
+        <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
+          Browse through reviews for 20+ blogshops
+        </h2>
+      </Fade>
+
       <div
         style={{ fontSize: "0.9rem", flexDirection: "row", display: "flex" }}
       >
