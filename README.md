@@ -1,8 +1,6 @@
 # SG Blogshop Review App
 
-A platform for consumers to gain access to real reviews in the vast blogshopping landscape in Singapore. A brand new idea not in the local market. 
-
-https://zyla.netlify.app
+A platform for consumers to gain access to real reviews in the vast blogshopping landscape in Singapore. 
 
 
 # Tech Stacks
