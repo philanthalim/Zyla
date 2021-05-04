@@ -33,8 +33,8 @@ const WriteReview = () => {
   const resize = (image1) => {
     Resizer.imageFileResizer(
       image1,
-      300,
-      300,
+      250,
+      250,
       "JPEG",
       100,
       0,
@@ -45,17 +45,21 @@ const WriteReview = () => {
     );
   };
   const submitReview = () => {
-    setCategory("Tops"); //reset state after submitting form succesfully
-    setRating(1);
-    setShop("Love Bonito");
-    Axios.post("https://zyla-app.herokuapp.com/api/reviews", {
-      item: item,
-      category: category,
-      shop: shop,
-      rating: rating,
-      comment: comment,
-      image: image,
-    });
+    try {
+      setCategory("Tops"); //reset state after submitting form succesfully
+      setRating(1);
+      setShop("Love Bonito");
+      Axios.post("https://zyla-app.herokuapp.com/api/reviews", {
+        item: item,
+        category: category,
+        shop: shop,
+        rating: rating,
+        comment: comment,
+        image: image,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
   const submitForm = () => {
     submitReview();

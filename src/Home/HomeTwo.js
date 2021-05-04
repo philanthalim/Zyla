@@ -2,27 +2,34 @@ import React from "react";
 import LB from "./LB.png";
 import mgp from "./mgp.png";
 import fashmob from "./fashmob.png";
+import { Link } from "react-router-dom";
 
 const HomeTwo = () => {
+  let popularList = [
+    { shopName: "Love Bonito", img: LB },
+    { shopName: "Fash Mob", img: fashmob },
+    { shopName: "MGP", img: mgp },
+  ];
   return (
     <div className="section-two">
       <h3 style={{ fontSize: "2rem" }}>Most Reviewed Blogshops</h3>
       <div className="bottom">
-        <div className="bottom-div">
-          <img className="s2-image" src={LB} alt="BlogShopImg"></img>
-          <h4 style={{ fontSize: "1.3rem" }}>Love Bonito</h4>
-          <p>30 reviews</p>
-        </div>
-        <div className="bottom-div">
-          <img className="s2-image" src={fashmob} alt="BlogShopImg"></img>
-          <h4 style={{ fontSize: "1.3rem" }}>Fash Mob</h4>
-          <p>20 reviews</p>
-        </div>
-        <div className="bottom-div">
-          <img className="s2-image" src={mgp} alt="BlogShopImg"></img>
-          <h4 style={{ fontSize: "1.3rem" }}>MGP Label</h4>
-          <p>36 reviews</p>
-        </div>
+        {popularList.map((shop) => (
+          <div className="bottom-div">
+            <Link
+              to={{
+                pathname: `/view-shop/${shop.shopName
+                  .replace(/\s+/g, "-")
+                  .toLowerCase()}`,
+                state: { shop: shop.shopName },
+              }}
+            >
+              <img className="s2-image" src={shop.img} alt="BlogShopImg"></img>
+            </Link>
+            <h4 style={{ fontSize: "1.3rem" }}>{shop.shopName}</h4>
+            <p>5 reviews</p>
+          </div>
+        ))}
       </div>
     </div>
   );
