@@ -13,26 +13,18 @@ const About = () => {
         <h3>Real Reviews</h3>
         <p>
           At Zyla, we offer access to real reviews from paying customers like
-          yourself, so that consumers can make well-informed decisions in the vast online shopping landscape.
+          yourself, so that consumers can make well-informed decisions in the
+          vast online shopping landscape.
         </p>
         <p>
-          It all started when I was scrolling through Instagram and came across
-          an account providing unfiltered reviews for the items she had gotten
-          from local shops. I felt that it was a great idea and as days passed,
-          I noticed that more people were following her account and even
-          commenting on her posts. Which goes to show that consumers are
-          actively looking for raw reviews. In an era where brand engagements is
-          a norm, it is not easy for consumers to find out the true quality of
-          items being sold. I love fashion and shopping on local shops but there
-          are times when items have fallen short of my expectations. I once
-          bought a dress from a Facebook live held by one of the blog shops as
-          the 'influencer' commented that it's suitable for taller ladies.
-          However, it was too short for me! My height is 1.7m and the dress
-          could barely cover my bottom. Frustrated with such experiences, I
-          combined my love for fashion and coding to provide a platform for
-          unfiltered reviews. I hope that more people will come forward to leave
-          their honest feedback on Zyla so that paying customers can make better
-          decisons and be satisfied with their purchases.
+          The act of buying stuff online often comes with the issue of
+          misrepresentation of item. Oftentimes, pictures are heavily edited and
+          may not reflect the true condition. Brand engagements is a norm now
+          and it is difficult to ascertain the true quality/fit of clothes sold
+          online. A certain dress may look good on Influencer A but that doesn't
+          neccesarily mean that it will look good on you. I thought there had to
+          be a way to bridge the online to offline retail gap and so I decided
+          to build Zyla for consumers to make more confident decisons.
         </p>
       </div>
       <Footer />
