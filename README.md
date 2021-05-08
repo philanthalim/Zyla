@@ -2,6 +2,8 @@
 
 A platform for consumers to gain access to real reviews in the vast blogshopping landscape in Singapore. 
 
+https://zyla.netlify.app
+
 
 # Tech Stacks
 
