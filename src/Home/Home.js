@@ -41,10 +41,10 @@ const Home = () => {
               onChange={(e) => setQuery(e.target.value)}
               className="search-box"
               type="search"
-              placeholder={"Search for BlogShops"}
+              placeholder={"Search for a BlogShop to get started"}
             ></input>
           </form>
-          <Link to={"/rate"} style={{ textDecoration: "none", color: "black" }}>
+          <Link to={"/rate"} style={{  color: "white" }}>
             <p className="home-header2">Write a review</p>
           </Link>
         </div>

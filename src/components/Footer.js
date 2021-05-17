@@ -1,20 +1,15 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div
-      className="footer-container"
-      style={{
-        minHeight: "100px",
-        backgroundColor: "#FDF3F2",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around",
-      }}
-    >
+    <div className="footer-container">
       <div className="footer-left">
         <h3 style={{ fontFamily: "Vogue", fontSize: "1.3rem" }}>ZYLA</h3>
-        <a style={{ textDecoration: "none", color: "black",marginTop:'-15px' }} href="/about">
+        <a
+          style={{ textDecoration: "none", color: "black", marginTop: "-15px" }}
+          href="/about"
+        >
           About Us
         </a>
         <a style={{ textDecoration: "none", color: "black" }} href="/rate">

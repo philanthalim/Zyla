@@ -1,8 +1,11 @@
 .nav-bar-container {
   top: 0;
+  left:0;
+  width:100%;
   background-color: transparent;
   height: 75px;
   display: flex;
   align-items: center;
-}
+  z-index: 10000;
 
+}
