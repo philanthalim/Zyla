@@ -10,7 +10,7 @@ input[type="search"] {
   border-radius: 0;
 }
 .home-img-container {
-  height: 60vh;
+  height: 80vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@ input[type="search"] {
   flex-direction: column;
 }
 .home-img {
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   object-fit: cover;
   filter: brightness(70%);
@@ -108,10 +108,10 @@ li {
     margin-top: 8vh;
   }
   .home-img {
-    height: 45vh;
+    height: 65vh;
   }
   .home-img-container {
-    height: 45vh;
+    height: 65vh;
   }
   .bottom {
     flex-direction: column;

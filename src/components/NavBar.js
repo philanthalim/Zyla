@@ -6,12 +6,11 @@ const NavBar = () => {
   return (
     <div className="nav-bar-container">
       <Link to={"/"} style={{ textDecoration: "none" }}>
-        <p
+        <p className='zyla'
           style={{
-            fontSize: "1.7rem",
-            color: "black",
+            fontSize: "2rem",
+            color: "white",
             fontWeight: "bold",
-            marginLeft: "35px",
             fontFamily: "Vogue",
           }}
         >

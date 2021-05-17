@@ -1,11 +1,25 @@
 .nav-bar-container {
-  top: 0;
-  left:0;
-  width:100%;
+  width: 100%;
   background-color: transparent;
   height: 75px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
   z-index: 10000;
+  position: absolute;
+  color: white;
+}
+.zyla {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  font-family: Vogue;
+}
+@media (max-width: 50em) {
+  .nav-bar-container {
+    justify-content: center;
+    margin-left: 0px;
 
+  }
 }

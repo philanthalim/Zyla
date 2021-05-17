@@ -29,6 +29,7 @@ const Home = () => {
           showThumbs={false}
           autoPlay
           interval={5000}
+          showArrows={false}
         >
           <img className="home-img" src={LB1} alt="BlogShopImg"></img>
           <img className="home-img" src={ilo} alt="BlogShopImg"></img>
