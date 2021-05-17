@@ -1,4 +1,4 @@
-.nav-bar-container {
+.nav-bar-container-home {
   width: 100%;
   background-color: transparent;
   height: 75px;
@@ -10,16 +10,31 @@
   position: absolute;
   color: white;
 }
-.zyla {
+.nav-bar-container-other {
+  width: 100%;
+  background-color: transparent;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  color: white;
+}
+.zyla-home {
   font-size: 2rem;
   color: white;
   font-weight: bold;
   font-family: Vogue;
 }
+.zyla-other {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  font-family: Vogue;
+}
 @media (max-width: 50em) {
-  .nav-bar-container {
+  .nav-bar-container-home {
     justify-content: center;
     margin-left: 0px;
-
   }
 }

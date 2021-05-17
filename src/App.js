@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import "./App.css";
-import NavBar from "./components/NavBar";
+import HomeNavBar from "./components/HomeNavBar";
+import OtherNavBar from "./components/OtherNavBar";
 import Home from "./Home/Home";
 import Submitted from "./SubmittedPage/Submitted";
 import SearchResults from "./SearchResults/SearchResults";
@@ -22,6 +23,41 @@ function App() {
   const [category, setCategory] = useState("Tops");
   const [rating, setRating] = useState(1);
   const [comment, setComment] = useState("");
+
+  const HomeNavbar = ({ exact, path, component: Component, ...rest }) => {
+    return (
+      <Route
+        exact={exact}
+        path={path}
+        {...rest}
+        render={(routeProps) => {
+          return (
+            <>
+              <HomeNavBar {...routeProps} />
+              <Component {...routeProps} />
+            </>
+          );
+        }}
+      />
+    );
+  };
+  const OtherNavbar = ({ exact, path, component: Component, ...rest }) => {
+    return (
+      <Route
+        exact={exact}
+        path={path}
+        {...rest}
+        render={(routeProps) => {
+          return (
+            <>
+              <OtherNavBar {...routeProps} />
+              <Component {...routeProps} />
+            </>
+          );
+        }}
+      />
+    );
+  };
   return (
     <ReviewContext.Provider
       value={{
@@ -37,22 +73,13 @@ function App() {
     >
       <Router>
         <ScrollToTop />
-        <NavBar />
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/submitted">
-            <Submitted />
-          </Route>
-          <Route component={SearchResults} exact path="/search/:shop"></Route>
-          <Route exact path="/rate">
-            <WriteReview />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route component={ViewShop} exact path="/view-shop/:shop"></Route>
+          <HomeNavbar exact path="/" component={Home} />
+          <OtherNavbar exact path="/submitted" component={Submitted}/>
+          <OtherNavbar component={SearchResults} exact path="/search/:shop"></OtherNavbar>
+          <OtherNavbar exact path="/rate" component={WriteReview}></OtherNavbar>
+          <OtherNavbar exact path="/about" component={About}></OtherNavbar>
+          <OtherNavbar component={ViewShop} exact path="/view-shop/:shop"></OtherNavbar>
         </Switch>
       </Router>
     </ReviewContext.Provider>
