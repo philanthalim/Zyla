@@ -121,10 +121,11 @@ li {
   }
 
   .search-box {
-    width: 400px;
+    width: 350px;
   }
   .home-header1 {
     font-size: 1.2rem;
+    font-weight: 750;
   }
   .home-header2 {
     font-size: 1rem;
