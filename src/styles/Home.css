@@ -1,9 +1,13 @@
 input {
   outline: none;
-  -webkit-box-shadow:none!important;
-  -moz-box-shadow:none!important;
-  box-shadow:none!important;
-
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-border-radius: 0px;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 .home-img-container {
   height: 60vh;
@@ -45,7 +49,7 @@ input {
   outline: none;
   font-size: 1.1rem;
   border-color: white;
-  border-style: solid;  /*remove grey border*/
+  border-style: solid; /*remove grey border*/
 }
 .section-one {
   margin-top: 8vh;
