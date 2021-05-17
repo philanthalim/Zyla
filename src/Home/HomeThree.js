@@ -41,7 +41,7 @@ const HomeThree = () => {
   return (
     <div className="section-three">
       <Fade bottom>
-        <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
+        <h2 className='browse'>
           Browse through reviews for 20+ blogshops
         </h2>
       </Fade>
@@ -58,24 +58,26 @@ const HomeThree = () => {
             flexDirection: "column",
           }}
         >
-          {list1.map((shop) => (
-            <Link
-              style={{
-                lineHeight: "60px",
-                display: "flex",
-                textDecoration: "none",
-                color: "black",
-              }}
-              to={{
-                pathname: `/view-shop/${shop
-                  .replace(/\s+/g, "-")
-                  .toLowerCase()}`,
-                state: { shop: shop },
-              }}
-            >
-              {shop}
-            </Link>
-          ))}
+          <div>
+            {list1.map((shop) => (
+              <Link
+                style={{
+                  lineHeight: "60px",
+                  display: "flex",
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                to={{
+                  pathname: `/view-shop/${shop
+                    .replace(/\s+/g, "-")
+                    .toLowerCase()}`,
+                  state: { shop: shop },
+                }}
+              >
+                {shop}
+              </Link>
+            ))}
+          </div>
         </div>
         <div
           style={{
@@ -86,24 +88,26 @@ const HomeThree = () => {
             flexDirection: "column",
           }}
         >
-          {list2.map((shop) => (
-            <Link
-              style={{
-                lineHeight: "60px",
-                display: "flex",
-                textDecoration: "none",
-                color: "black",
-              }}
-              to={{
-                pathname: `/view-shop/${shop
-                  .replace(/\s+/g, "-")
-                  .toLowerCase()}`,
-                state: { shop: shop },
-              }}
-            >
-              {shop}
-            </Link>
-          ))}
+          <div>
+            {list2.map((shop) => (
+              <Link
+                style={{
+                  lineHeight: "60px",
+                  display: "flex",
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                to={{
+                  pathname: `/view-shop/${shop
+                    .replace(/\s+/g, "-")
+                    .toLowerCase()}`,
+                  state: { shop: shop },
+                }}
+              >
+                {shop}
+              </Link>
+            ))}
+          </div>
         </div>
         <div
           style={{
@@ -114,24 +118,26 @@ const HomeThree = () => {
             flexDirection: "column",
           }}
         >
-          {list3.map((shop) => (
-            <Link
-              style={{
-                lineHeight: "60px",
-                display: "flex",
-                textDecoration: "none",
-                color: "black",
-              }}
-              to={{
-                pathname: `/view-shop/${shop
-                  .replace(/\s+/g, "-")
-                  .toLowerCase()}`,
-                state: { shop: shop },
-              }}
-            >
-              {shop}
-            </Link>
-          ))}
+          <div>
+            {list3.map((shop) => (
+              <Link
+                style={{
+                  lineHeight: "60px",
+                  display: "flex",
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                to={{
+                  pathname: `/view-shop/${shop
+                    .replace(/\s+/g, "-")
+                    .toLowerCase()}`,
+                  state: { shop: shop },
+                }}
+              >
+                {shop}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ const HomeTwo = () => {
   return (
     <div className="section-two">
       <Fade bottom>
-        <h3 style={{ fontSize: "2rem" }}>Most Reviewed Blogshops</h3>
+        <h3 style={{ fontSize: "2rem"}}>Most Reviewed Blogshops</h3>
       </Fade>
   
         <div className="bottom">
