@@ -75,11 +75,19 @@ function App() {
         <ScrollToTop />
         <Switch>
           <HomeNavbar exact path="/" component={Home} />
-          <OtherNavbar exact path="/submitted" component={Submitted}/>
-          <OtherNavbar component={SearchResults} exact path="/search/:shop"></OtherNavbar>
+          <OtherNavbar exact path="/submitted" component={Submitted} />
+          <OtherNavbar
+            component={SearchResults}
+            exact
+            path="/search/:shop"
+          ></OtherNavbar>
           <OtherNavbar exact path="/rate" component={WriteReview}></OtherNavbar>
           <OtherNavbar exact path="/about" component={About}></OtherNavbar>
-          <OtherNavbar component={ViewShop} exact path="/view-shop/:shop"></OtherNavbar>
+          <OtherNavbar
+            component={ViewShop}
+            exact
+            path="/view-shop/:shop"
+          ></OtherNavbar>
         </Switch>
       </Router>
     </ReviewContext.Provider>

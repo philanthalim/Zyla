@@ -5,19 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 2rem;
   z-index: 10000;
   position: absolute;
-  color: white;
-}
-.nav-bar-container-other {
-  width: 100%;
-  background-color: transparent;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 2rem;
   color: white;
 }
 .zyla-home {
@@ -25,7 +14,17 @@
   color: white;
   font-weight: bold;
   font-family: Vogue;
+  margin-left: 2rem;
 }
+.nav-bar-container-other {
+  background-color: transparent;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  color: white;
+}
+
 .zyla-other {
   font-size: 2rem;
   color: black;
@@ -35,6 +34,8 @@
 @media (max-width: 50em) {
   .nav-bar-container-home {
     justify-content: center;
-    margin-left: 0px;
+  }
+  .zyla-home {
+    margin-left:0;
   }
 }
