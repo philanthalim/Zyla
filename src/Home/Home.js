@@ -27,7 +27,7 @@ const Home = () => {
           className="home-img"
           infiniteLoop={true}
           showThumbs={false}
-          autoPlay
+          autoPlay={true}
           interval={5000}
           showArrows={false}
         >

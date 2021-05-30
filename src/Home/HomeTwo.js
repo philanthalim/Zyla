@@ -16,10 +16,10 @@ const HomeTwo = () => {
       <Fade bottom>
         <h3 style={{ fontSize: "2rem"}}>Most Reviewed Blogshops</h3>
       </Fade>
-  
+
         <div className="bottom">
           {popularList.map((shop) => (
-            <div className="bottom-div">
+            <div key={shop.shopName} className="bottom-div">
               <Link
                 to={{
                   pathname: `/view-shop/${shop.shopName

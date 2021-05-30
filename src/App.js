@@ -15,14 +15,10 @@ import "./styles/Home.css";
 import "./styles/Review.css";
 import "./styles/ViewShop.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { ReviewContext } from "./context";
-import { useState } from "react";
+//import { ReviewContext } from "./context";
+//import { useState } from "react";
 
 function App() {
-  const [shop, setShop] = useState("Love Bonito");
-  const [category, setCategory] = useState("Tops");
-  const [rating, setRating] = useState(1);
-  const [comment, setComment] = useState("");
 
   const HomeNavbar = ({ exact, path, component: Component, ...rest }) => {
     return (
@@ -59,18 +55,6 @@ function App() {
     );
   };
   return (
-    <ReviewContext.Provider
-      value={{
-        shop,
-        setShop,
-        category,
-        setCategory,
-        rating,
-        setRating,
-        comment,
-        setComment,
-      }}
-    >
       <Router>
         <ScrollToTop />
         <Switch>
@@ -90,7 +74,7 @@ function App() {
           ></OtherNavbar>
         </Switch>
       </Router>
-    </ReviewContext.Provider>
+   
   );
 }
 

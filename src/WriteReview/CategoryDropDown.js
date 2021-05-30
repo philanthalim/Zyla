@@ -1,10 +1,14 @@
-import React, { useContext } from "react";
-import { ReviewContext } from "../context";
+import React from "react";
+import { useDispatch, useSelector, connect } from "react-redux";
 
-const CategoryDropDown = () => {
-  const { setCategory } = useContext(ReviewContext);
+const CategoryDropDown = (props) => {
+  const dispatch = useDispatch();
+
   const onSelect = (e) => {
-    setCategory(e.target.value);
+    dispatch({
+      type: "UPDATE_STATE",
+      data: { category: e.target.value },
+    });
   };
 
   return (
@@ -13,7 +17,11 @@ const CategoryDropDown = () => {
         Select{" "}
         <span style={{ color: "#e892ad", fontWeight: "bold" }}>Category</span>
       </p>
-      <select className="shop-cat-select" onChange={(e) => onSelect(e)}>
+      <select
+        className="shop-cat-select"
+        value={props.category}
+        onChange={(e) => onSelect(e)}
+      >
         <option>Tops</option>
         <option>Bottoms</option>
         <option>Accessories</option>
@@ -24,4 +32,8 @@ const CategoryDropDown = () => {
   );
 };
 
-export default CategoryDropDown;
+function mapStateToProps(state) {
+  return { category: state.category };
+}
+
+export default connect(mapStateToProps)(CategoryDropDown);

@@ -91,7 +91,7 @@ const ViewShop = () => {
           )
         ) : (
           reviews.map((item) => (
-            <div className="rating-container">
+            <div key={item.comment} className="rating-container">
               <div className="rating-container-1">
                 <p>{item.item.toUpperCase()}</p>
                 <p style={{}}>{item.rating}.0</p>

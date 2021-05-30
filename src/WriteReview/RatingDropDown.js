@@ -1,11 +1,14 @@
-import React, {useContext } from "react";
-import { ReviewContext } from "../context";
+import React from "react";
+import { useDispatch, useSelector, connect } from "react-redux";
 
-const RatingDropDown = () => {
-  const { setRating } = useContext(ReviewContext);
+const RatingDropDown = (props) => {
+  const dispatch = useDispatch();
 
   const onSelect = (e) => {
-    setRating(parseInt(e.target.value));
+    dispatch({
+      type: "UPDATE_STATE",
+      data: { rating: e.target.value },
+    });
   };
 
   return (
@@ -18,21 +21,29 @@ const RatingDropDown = () => {
           </span>
           out of 10
         </p>
-        <select className="rate-select" onChange={(e) => onSelect(e)}>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
+        <select
+          className="rate-select"
+          value={props.rating}
+          onChange={(e) => onSelect(e)}
+        >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
         </select>
       </div>
     </div>
   );
 };
 
-export default RatingDropDown;
+function mapStateToProps(state) {
+  return { rating: state.rating };
+}
+
+export default connect(mapStateToProps)(RatingDropDown);

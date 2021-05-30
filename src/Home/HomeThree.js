@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
+//import Fade from "react-reveal/Fade";
 
 const HomeThree = () => {
   const list1 = [
@@ -40,11 +40,11 @@ const HomeThree = () => {
   ];
   return (
     <div className="section-three">
-      <Fade bottom>
+ 
         <h2 className='browse'>
           Browse through reviews for 20+ blogshops
         </h2>
-      </Fade>
+  
 
       <div
         style={{ fontSize: "0.9rem", flexDirection: "row", display: "flex" }}
@@ -60,7 +60,7 @@ const HomeThree = () => {
         >
           <div>
             {list1.map((shop) => (
-              <Link
+              <Link key={shop}
                 style={{
                   lineHeight: "60px",
                   display: "flex",
@@ -90,7 +90,7 @@ const HomeThree = () => {
         >
           <div>
             {list2.map((shop) => (
-              <Link
+              <Link key={shop}
                 style={{
                   lineHeight: "60px",
                   display: "flex",
@@ -120,7 +120,7 @@ const HomeThree = () => {
         >
           <div>
             {list3.map((shop) => (
-              <Link
+              <Link key={shop}
                 style={{
                   lineHeight: "60px",
                   display: "flex",

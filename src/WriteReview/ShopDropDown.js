@@ -1,10 +1,14 @@
-import React, { useContext } from "react";
-import { ReviewContext } from "../context";
+import React from "react";
+import { useDispatch, useSelector, connect } from "react-redux";
 
-const DropDown = () => {
-  const { setShop } = useContext(ReviewContext);
+const DropDown = (props) => {
+  const dispatch = useDispatch();
+
   const onSelect = (e) => {
-    setShop(e.target.value);
+    dispatch({
+      type: "UPDATE_STATE",
+      data: { shop: e.target.value },
+    });
   };
 
   return (
@@ -13,7 +17,11 @@ const DropDown = () => {
         Select{" "}
         <span style={{ color: "#e892ad", fontWeight: "bold" }}>Blogshop</span>{" "}
       </p>
-      <select className="shop-cat-select" onChange={(e) => onSelect(e)}>
+      <select
+        className="shop-cat-select"
+        value={props.shop}
+        onChange={(e) => onSelect(e)}
+      >
         <option>Love Bonito</option>
         <option>Lovet</option>
         <option>Neonmello</option>
@@ -32,7 +40,6 @@ const DropDown = () => {
         <option>Blairwears</option>
         <option>Lbrlabel</option>
         <option>6styleco</option>
-        <option>MGP</option>
         <option>Closet Lover</option>
         <option>Tinsel Rack</option>
         <option>Willow Label</option>
@@ -46,4 +53,8 @@ const DropDown = () => {
   );
 };
 
-export default DropDown;
+function mapStateToProps(state) {
+  return { shop: state.shop };
+}
+
+export default connect(mapStateToProps)(DropDown);

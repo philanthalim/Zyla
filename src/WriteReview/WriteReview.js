@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react";
-import { ReviewContext } from "../context";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import lovet from "../images/lovetPink2.jpeg";
 import ShopDropDown from "./ShopDropDown";
@@ -9,27 +8,21 @@ import CommentReview from "./CommentReview";
 import Axios from "axios";
 import Resizer from "react-image-file-resizer";
 import { useHistory } from "react-router-dom";
+import { useDispatch, useSelector, connect } from "react-redux";
 
-const WriteReview = () => {
+const WriteReview = (props) => {
+  const dispatch = useDispatch();
   const history = useHistory();
   const [item, setItem] = useState("");
   const [image, setImage] = useState(
     "https://images.pexels.com/photos/3910065/pexels-photo-3910065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   );
-  const {
-    shop,
-    category,
-    rating,
-    comment,
-    setCategory,
-    setShop,
-    setRating,
-  } = useContext(ReviewContext);
 
   const handleImage = (e) => {
     const file = e.target.files[0];
     resize(file);
   };
+
   const resize = (image1) => {
     Resizer.imageFileResizer(
       image1,
@@ -46,19 +39,20 @@ const WriteReview = () => {
   };
   const submitReview = () => {
     try {
-      setCategory("Tops"); //reset state after submitting form succesfully
-      setRating(1);
-      setShop("Love Bonito");
       Axios.post("https://zyla-app.herokuapp.com/api/reviews", {
         item: item,
-        category: category,
-        shop: shop,
-        rating: rating,
-        comment: comment,
+        category: props.category,
+        shop: props.shop,
+        rating: props.rating,
+        comment: props.comment,
         image: image,
       });
+      dispatch({
+        type: "RESET_STATE",
+        data: { comment: "", rating: 1, shop: "Love Bonito", category: "Tops" },
+      });
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
   const submitForm = () => {
@@ -111,4 +105,13 @@ const WriteReview = () => {
   );
 };
 
-export default WriteReview;
+function mapStateToProps(state) {
+  return {
+    category: state.category,
+    shop: state.shop,
+    comment: state.comment,
+    rating: state.rating,
+  };
+}
+
+export default connect(mapStateToProps)(WriteReview);

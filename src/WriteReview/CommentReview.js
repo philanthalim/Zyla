@@ -1,11 +1,14 @@
-import React, { useContext } from "react";
-import { ReviewContext } from "../context";
+import React from "react";
+import { useDispatch, useSelector, connect } from "react-redux";
 
-const CommentReview = () => {
-  const { setComment } = useContext(ReviewContext);
+const CommentReview = (props) => {
+  const dispatch = useDispatch();
 
   const onHandleChange = (e) => {
-    setComment(e.target.value);
+    dispatch({
+      type: "UPDATE_STATE",
+      data: { comment: e.target.value },
+    });
   };
 
   return (
@@ -20,6 +23,7 @@ const CommentReview = () => {
         Here's your chance to be specific and let others know what to expect!
       </p>
       <textarea
+        value={props.comment}
         required
         maxLength={200}
         onChange={(e) => onHandleChange(e)}
@@ -30,4 +34,8 @@ const CommentReview = () => {
   );
 };
 
-export default CommentReview;
+function mapStateToProps(state) {
+  return { comment: state.comment };
+}
+
+export default connect(mapStateToProps)(CommentReview);
